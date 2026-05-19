@@ -1,12 +1,3 @@
-.navbar-0 {
-    background-color: black;
-    color: rgb(253, 253, 253);
-}
-
-.bg-02{
-    color: rgb(255, 255, 255);
-}
-.navbar > .navbar-expand {
-    color: rgb(255, 255, 255);
-    background-color: black;
+.text-bg-white {
+    color: aliceblue;
 }
