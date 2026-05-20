@@ -18,63 +18,70 @@
     <body>
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-black text-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg bg-black container-geral">
+            <div class=" text-bg-light container-img">
+
+                 <img src="img/Red Minimal Car Illustration Free Logo.png" id="imgg"
+                 alt="">
+
+                <a class="navbar-brand" href="#">Veltrix</a>
+
+                <ul class="Botões-Principais">
+                    <a href="#" class="Home"><li>Home</li></a>
+
+                    <a href="#" class="Sobre"><li>Sobre</li></a>
+
+                    <a href="#" class="Contato"><li>Contato</li></a>
+                </ul>
+
+                <form class="d-flex Pesquisa-principal" role="search">
+                
+                    <input class="me-2" type="search" aria-label="Pesquise.." placeholder="Pesquise..">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+
+                </form>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--Carousel-->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled"
-                                aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </nav>
 
-        <!--Carousel-->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button"
-                data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button"
-                data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <footer>®2026 Copyright Site de Vendas a Carros</footer>
-    </body>
-</html>
+            <footer>®2026 Copyright Site de Vendas a Carros</footer>
+        </body>
+    </html>
