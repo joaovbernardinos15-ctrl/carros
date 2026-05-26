@@ -27,8 +27,30 @@ img {
     margin-left: 0;
     padding: 0;
 }
-.Pesquisa-principal {
-    width: auto;
-    margin: auto;
-    
+
+.Pesquisa-principal input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 0;
 }
+.Pesquisa-principal button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.Pesquisa-principal button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para a página de contato */
