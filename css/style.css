@@ -51,7 +51,22 @@ img {
 .Pesquisa-principal button:hover {
     background-color: #0056b3;
 }
-
+#direita-1  {
+   border-radius: 10px;
+    border: solid auto black;
+    margin: 100px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#botton-021 {
+    background-color: black;
+    margin: auto;
+    margin-top: 1000px;
+    color: white;
+    padding: 30px;
+}
 
 
 
