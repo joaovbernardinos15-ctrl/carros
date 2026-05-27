@@ -65,9 +65,10 @@
     color: white;
     padding: 30px;
 }
-#carouselExample {
-    width: auto;
-    margin: 0;
+.carousel-item {
+    width: 1200px;
+    margin: auto;
+    background-color: black;
 }
 
 
