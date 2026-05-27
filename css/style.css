@@ -15,7 +15,7 @@
 .Contato {
     color: black;
 }
-img {
+#imgg {
     width: 100px;
     margin: 0;
 }
@@ -52,13 +52,11 @@ img {
     background-color: #0056b3;
 }
 #direita-1  {
-   border-radius: 10px;
-    border: solid auto black;
-    margin: 100px;
-    margin-left: auto;
+   border-radius: 10px; 
+   margin-right: auto;  
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    width: 200px;
 }
 #botton-021 {
     background-color: black;
