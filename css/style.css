@@ -65,6 +65,10 @@
     color: white;
     padding: 30px;
 }
+#carouselExample {
+    width: auto;
+    margin: 0;
+}
 
 
 
