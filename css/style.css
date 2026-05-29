@@ -16,8 +16,8 @@
     color: rgb(255, 255, 255);
 }
 #imgg {
-    width: 100px;
-    margin-top: 15px;
+    width: 190px;
+    margin-top: 30px;
     margin-left: 10px;
 }
 .container-geral{
@@ -62,7 +62,7 @@
 #botton-021 {
     background-color: rgb(0, 0, 0);
     margin: auto;
-    margin-top: 1000px;
+    margin-top: 200px;
     color: white;
     padding: 30px;
 }
@@ -79,10 +79,41 @@
     margin-top: 50px;
 }
 .navbar-brand{
-    margin-top: 40px;
+    margin-top: -30px;
 }
 .carousel-inner{
     background-color: black;
     margin-top: 10px;
 }
+.img-thumbnail{
+    width: 300px;
+    margin-top: 100px;
+}
+.card{
+    width: 300px;
+    margin-top: 100px;
+}
+.container-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 70px;
+}
+.container-cards button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container-cards button:hover{
+    cursor: pointer;
+    color: #ccc;
+    transform:translateY(-3px);
+}
+.container-cards p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* Estilos para a página de contato */
