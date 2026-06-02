@@ -1,98 +1,51 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre - Veltrix</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-black container-geral">
-        <div class=" text-bg-light bg-black container-img">
+    <header class="topo">
+        <div class="barra-topo">
+            <a class="logo" href="index.html" aria-label="Veltrix">
+                <img src="img/Velotrix.svg" alt="Veltrix">
+            </a>
 
-            <form class="d-flex Pesquisa-principal " role="search">
-
-                <img src="img/Velotrix.svg" id="imgg" alt>
-
-                <a class="navbar-brand" href="index.html">Veltrix</a>
-
-                <input class="me-2" type="search" aria-label="Pesquise.." placeholder="Pesquise..">
-                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-
+            <form class="pesquisa" role="search">
+                <input type="search" aria-label="Pesquise" placeholder="Pesquise seu carro">
+                <button type="submit">Pesquisar</button>
             </form>
-
-            <ul class="Botões-Principais">
-                <a href="index.html" class="Home">
-                    <li>Home</li>
-                </a>
-
-                <a href="sobre.html" class="Sobre">
-                    <li>Sobre</li>
-                </a>
-
-                <a href="contato.html" class="Contato">
-                    <li>Contato</li>
-                </a>
-            </ul>
-
-    </nav>
-    <!--Carousel-->
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/ChatGPT Image 1 de jun. de 2026, 18_13_32.png" class="d-block " alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/ChatGPT Image 1 de jun. de 2026, 18_17_08.png" class="d-block " alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/ChatGPT Image 1 de jun. de 2026, 18_25_47.png" class="d-block " alt="...">
-            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!--sobre-->
-    <div class="container-sobre">
-        <h1>Sobre</h1>
-        <p>Bem-vindo ao nosso site de vendas de carros! Somos uma empresa dedicada a oferecer uma ampla variedade de
-            veículos de alta qualidade para atender às suas necessidades e preferências. Nossa missão é proporcionar uma
-            experiência de compra excepcional, oferecendo carros confiáveis, modernos e acessíveis. Com uma equipe de
-            profissionais experientes, estamos comprometidos em ajudar você a encontrar o carro perfeito que se encaixe
-            no seu estilo de vida e orçamento. Explore nosso catálogo e descubra as melhores opções para você!</p>
-        <p>Sobre o Site Veltrix – Compra e Venda de Carros de Contato
+        <nav class="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            O Veltrix é uma plataforma digital desenvolvida para facilitar a compra e venda de veículos de forma
-            prática, rápida e segura. O objetivo principal do site é conectar pessoas interessadas em vender seus carros
-            com usuários que procuram veículos de qualidade, tudo em um único ambiente online.
+    <main>
+        <section class="banner banner-paginas" aria-label="Imagens sobre a Veltrix">
+            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_13_32.png" alt="Loja Veltrix">
+            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_17_08.png" alt="Atendimento Veltrix">
+            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_25_47.png" alt="Veículos Veltrix">
+        </section>
 
-            Na página inicial, o usuário encontra uma interface moderna, com design escuro e elementos visuais que
-            remetem ao universo automotivo. O logotipo da Veltrix reforça a identidade da marca e transmite
-            profissionalismo. Além disso, há uma barra de pesquisa em destaque, permitindo que os visitantes encontrem
-            rapidamente os veículos desejados.
+        <section class="conteudo">
+            <h1>Sobre</h1>
+            <p>Bem-vindo ao nosso site de vendas de carros! Somos uma empresa dedicada a oferecer uma ampla variedade de veículos de alta qualidade para atender às suas necessidades e preferências.</p>
+            <p>Nossa missão é proporcionar uma experiência de compra excepcional, oferecendo carros confiáveis, modernos e acessíveis. Com uma equipe de profissionais experientes, estamos comprometidos em ajudar você a encontrar o carro perfeito para seu estilo de vida e orçamento.</p>
+            <p>O Veltrix é uma plataforma digital desenvolvida para facilitar a compra e venda de veículos de forma prática, rápida e segura. Nosso objetivo é conectar pessoas interessadas em vender seus carros com usuários que procuram veículos de qualidade em um único ambiente online.</p>
+        </section>
+    </main>
 
-            O menu de navegação é simples e intuitivo, contendo as opções Home, Sobre e Contato. Isso facilita a
-            experiência do usuário, permitindo acesso rápido às principais informações do site.</p>
-    </div>
-
-    <!--Rodapé-->
-    <form id="botton-021">
-        <footer>®2026 Copyright Site de Vendas a Carros</footer>
-    </form>
+    <footer class="rodape">© 2022 Copyright Veltrix</footer>
 </body>
 
 </html>

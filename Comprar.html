@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar - Veltrix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="barra-topo">
+            <a class="logo" href="index.html" aria-label="Veltrix">
+                <img src="img/Velotrix.svg" alt="Veltrix">
+            </a>
+
+            <form class="pesquisa" role="search">
+                <input type="search" aria-label="Pesquise" placeholder="Pesquise seu carro">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <nav class="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-compra">
+        <section class="compra-resumo">
+            <div>
+                <h1>Finalizar compra</h1>
+                <p>Preencha seus dados para que a equipe Veltrix entre em contato e confirme os detalhes do veículo.</p>
+            </div>
+            <img src="img/Velotrix.svg" alt="Veltrix">
+        </section>
+
+        <section class="area-compra">
+            <form class="form-compra">
+                <div class="carro-selecionado">
+                    <strong>Carro selecionado:</strong>
+                    <p id="ferrari" class="carro-opcao">Ferrari</p>
+                    <p id="fusca" class="carro-opcao">Fuscão Preto</p>
+                    <p id="porsche" class="carro-opcao">Porsche</p>
+                    <p id="byd" class="carro-opcao">BYD Seal</p>
+                    <p id="chiron" class="carro-opcao">Bugatti Chiron</p>
+                    <p id="veneno" class="carro-opcao">Lamborghini Veneno</p>
+                    <p id="spider" class="carro-opcao">Lamborghini Spider</p>
+                    <p id="audi" class="carro-opcao">Audi RS6</p>
+                    <p id="jaguar" class="carro-opcao">Jaguar</p>
+                    <p id="range-rover" class="carro-opcao">Range Rover Sport</p>
+                </div>
+
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="Digite seu e-mail">
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" placeholder="Digite seu telefone">
+
+                <label for="pagamento">Forma de pagamento</label>
+                <select id="pagamento" name="pagamento">
+                    <option>À vista</option>
+                    <option>Financiamento</option>
+                    <option>Consórcio</option>
+                    <option>Troca com usado</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva alguma observação"></textarea>
+
+                <button type="submit">Enviar pedido</button>
+            </form>
+
+            <aside class="compra-info">
+                <h2>Como funciona?</h2>
+                <p>Após o envio, nossa equipe confirma disponibilidade, preço, documentação e opções de pagamento.</p>
+                <p>Você também pode voltar para a loja e escolher outro veículo.</p>
+                <a href="index.html">Voltar para os carros</a>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="rodape">© 2022 Copyright Veltrix</footer>
+</body>
+
+</html>

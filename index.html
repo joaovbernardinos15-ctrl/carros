@@ -1,197 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veltrix - Loja de Carros</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="topo">
+        <div class="barra-topo">
+            <a class="logo" href="index.html" aria-label="Veltrix">
+                <img src="img/Velotrix.svg" alt="Veltrix">
+            </a>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-black container-geral">
-        <div class=" text-bg-black container-img">
-
-            <form class="d-flex Pesquisa-principal " role="search">
-
-                <a class="navbar-brand text-white" href="index.html"> <img src="img/Velotrix.svg" id="imgg"></a>
-
-                <input class="me-2" type="search" aria-label="Pesquise.." placeholder="Pesquise..">
-                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-
+            <form class="pesquisa" role="search">
+                <input type="search" aria-label="Pesquise" placeholder="Pesquise seu carro">
+                <button type="submit">Pesquisar</button>
             </form>
+        </div>
 
-            <ul class="Botões-Principais">
-                <a href="index.html" class="Home">
-                    <li>Home</li>
-                </a>
-
-                <a href="sobre.html" class="Sobre">
-                    <li>Sobre</li>
-                </a>
-
-                <a href="contato.html" class="Contato">
-                    <li>Contato</li>
-                </a>
+        <nav class="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
             </ul>
+        </nav>
+    </header>
 
-    </nav>
+    <main>
+        <section class="banner" aria-label="Destaques da loja">
+            <img src="img/AUTO.png" alt="Carro em destaque da Veltrix">
+            <img src="img/AUTO (1).png" alt="Oferta de carro esportivo">
+            <img src="img/AUTO (2).png" alt="Carro premium em destaque">
+        </section>
 
-    <!--Carousel-->
-    <div id="carouselExample" class="carousel slide">
+        <section class="container-cards" aria-label="Carros disponíveis">
+            <article class="card-carro">
+                <img src="img/ferrari.webp" alt="Ferrari">
+                <div class="info-carro">
+                    <p>FERRARI</p>
+                    <a class="botao-comprar" href="Comprar.html#ferrari">Comprar</a>
+                </div>
+            </article>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/AUTO.png" class="d-block" alt="...">
-            </div>
+            <article class="card-carro">
+                <img src="img/fusca preto.jpg" alt="Fusca preto">
+                <div class="info-carro">
+                    <p>FUSCÃO PRETO</p>
+                    <a class="botao-comprar" href="Comprar.html#fusca">Comprar</a>
+                </div>
+            </article>
 
-            <div class="carousel-item">
-                <img src="img/AUTO (1).png" class="d-block" alt="...">
-            </div>
+            <article class="card-carro">
+                <img src="img/porsche.webp" alt="Porsche">
+                <div class="info-carro">
+                    <p>PORSCHE</p>
+                    <a class="botao-comprar" href="Comprar.html#porsche">Comprar</a>
+                </div>
+            </article>
 
-            <div class="carousel-item">
-                <img src="img/AUTO (2).png" class="d-block" alt="...">
-            </div>
+            <article class="card-carro">
+                <img src="img/byd.avif" alt="BYD Seal">
+                <div class="info-carro">
+                    <p>BYD SEAL</p>
+                    <a class="botao-comprar" href="Comprar.html#byd">Comprar</a>
+                </div>
+            </article>
 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+            <article class="card-carro">
+                <img src="img/chiron.jpg" alt="Bugatti Chiron">
+                <div class="info-carro">
+                    <p>BUGATTI CHIRON</p>
+                    <a class="botao-comprar" href="Comprar.html#chiron">Comprar</a>
+                </div>
+            </article>
 
-    <!--Imagens de carros-->
+            <article class="card-carro">
+                <img src="img/veneno.jpg" alt="Lamborghini Veneno">
+                <div class="info-carro">
+                    <p>LAMBORGHINI VENENO</p>
+                    <a class="botao-comprar" href="Comprar.html#veneno">Comprar</a>
+                </div>
+            </article>
 
-    <div class="container-cards">
-        <div class="card">
-            <img src="/img/ferrari.webp" alt="">
+            <article class="card-carro">
+                <img src="img/spider.webp" alt="Lamborghini Spider">
+                <div class="info-carro">
+                    <p>LAMBORGHINI SPIDER</p>
+                    <a class="botao-comprar" href="Comprar.html#spider">Comprar</a>
+                </div>
+            </article>
 
-            <div class="card-body">
-                <p>
-                    FERRARI
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
+            <article class="card-carro">
+                <img src="img/Audi-RS6-Performance-25-1320x743.webp" alt="Audi RS6">
+                <div class="info-carro">
+                    <p>AUDI RS6</p>
+                    <a class="botao-comprar" href="Comprar.html#audi">Comprar</a>
+                </div>
+            </article>
 
-        <div class="card">
-            <img src="/img/fusca preto.jpg" alt="">
+            <article class="card-carro">
+                <img src="img/jaguar.webp" alt="Jaguar">
+                <div class="info-carro">
+                    <p>JAGUAR</p>
+                    <a class="botao-comprar" href="Comprar.html#jaguar">Comprar</a>
+                </div>
+            </article>
 
-            <div class="card-body">
-                <p>
-                    FUSCÃO PRETO
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
+            <article class="card-carro">
+                <img src="img/range-rover-sport-2023.jpg" alt="Range Rover Sport">
+                <div class="info-carro">
+                    <p>RANGE ROVER SPORT</p>
+                    <a class="botao-comprar" href="Comprar.html#range-rover">Comprar</a>
+                </div>
+            </article>
+        </section>
+    </main>
 
-        <div class="card">
-            <img src="/img/porsche.webp" alt="">
-
-            <div class="card-body">
-                <p>
-                    PORSCHE
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/byd.avif" alt="">
-
-            <div class="card-body">
-                <p>
-                    BYD SEAL
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-          <div class="card">
-            <img src="/img/chiron.jpg" alt="">
-
-            <div class="card-body">
-                <p>
-                    BUGATTI CHIRON
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-          <div class="card">
-            <img src="/img/veneno.jpg" alt="">
-
-            <div class="card-body">
-                <p>
-                    LAMBORGHINI VENENO
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-          <div class="card">
-            <img src="/img/spider.webp" alt="">
-
-            <div class="card-body">
-                <p>
-                    LAMBORGHINI SPIDER
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-          <div class="card">
-            <img src="/img/Audi-RS6-Performance-25-1320x743.webp" alt="">
-
-            <div class="card-body">
-                <p>
-                    AUDI R6
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-          <div class="card">
-            <img src="/img/jaguar.webp" alt="">
-
-            <div class="card-body">
-                <p>
-                    JAGUAR
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-         <div class="card">
-            <img src="/img/range-rover-sport-2023.jpg" alt="">
-
-            <div class="card-body">
-                <p>
-                   RANGE ROVER SPORT
-                </p>
-                <button>Comprar</button>
-            </div>
-        </div>
-
-
-    </div>
-
-    <!--Rodapé-->
-    <form id="botton-021">
-        <footer>®2026 Copyright Site de Vendas a Carros</footer>
-    </form>
-
+    <footer class="rodape">© 2022 Copyright Veltrix</footer>
 </body>
 
 </html>
