@@ -69,6 +69,103 @@ body {
     transform: translateY(-2px);
 }
 
+.acoes-conta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    background-color: #111;
+}
+
+.acoes-conta a {
+    min-width: 92px;
+    border-radius: 5px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.botao-entrar {
+    background-color: #000;
+}
+
+.botao-cadastrar {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.acoes-conta a:hover {
+    transform: translateY(-2px);
+}
+
+.botao-entrar:hover {
+    background-color: #4e4e4e;
+}
+
+.botao-cadastrar:hover {
+    background-color: #4e4e4e;
+}
+
+.perfil-logado {
+    padding: 6px;
+}
+
+.perfil-cliente {
+    min-width: 168px !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px !important;
+    background-color: #000;
+}
+
+.avatar-cliente {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.perfil-cliente span:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.perfil-cliente small {
+    color: #cfcfcf;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.botao-sair {
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px 12px;
+    background-color: #2f2f2f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.botao-sair:hover {
+    background-color: #4e4e4e;
+    transform: translateY(-2px);
+}
+
 .menu {
     border-top: 1px solid #242424;
 }
@@ -395,6 +492,105 @@ body {
     background-color: #848484;
 }
 
+.pagina-login {
+    width: min(1180px, 94%);
+    min-height: 620px;
+    margin: 36px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.72)), url("../img/Audi-RS6-Performance-25-1320x743.webp") center/cover;
+    border-radius: 8px;
+}
+
+.cartao-login {
+    width: min(440px, 92%);
+    padding: 28px;
+    border-radius: 8px;
+    background-color: #050505;
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+}
+
+.cartao-cadastro {
+    width: min(520px, 92%);
+}
+
+.logo-login {
+    width: 190px;
+    margin: 0 auto 18px;
+    display: block;
+}
+
+.cartao-login h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cartao-login p {
+    margin-bottom: 18px;
+    color: #e6e6e6;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-login label {
+    font-weight: bold;
+}
+
+.form-login input {
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: #161616;
+    color: #fff;
+    font: inherit;
+}
+
+.form-login input::placeholder {
+    color: #b8b8b8;
+}
+
+.form-login input:focus {
+    border-color: #9ac5ff;
+    outline: 2px solid rgba(154, 197, 255, 0.35);
+}
+
+.form-login button {
+    margin-top: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 13px;
+    background-color: #2f2f2f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form-login button:hover {
+    background-color: #353535;
+    transform: translateY(-2px);
+}
+
+.link-conta {
+    margin: 18px 0 0;
+    font-weight: bold;
+}
+
+.link-conta a {
+    color: #9ac5ff;
+}
+
 .rodape {
     margin-top: 60px;
     padding: 28px;
@@ -461,6 +657,28 @@ body {
         flex-wrap: wrap;
     }
 
+    .acoes-conta {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .acoes-conta a {
+        flex: 1;
+    }
+
+    .perfil-logado {
+        flex-wrap: wrap;
+    }
+
+    .perfil-cliente {
+        flex: 1 1 100% !important;
+        justify-content: center;
+    }
+
+    .botao-sair {
+        flex: 1;
+    }
+
     .menu ul {
         gap: 28px;
         flex-wrap: wrap;
@@ -483,5 +701,14 @@ body {
     .compra-resumo {
         flex-direction: column;
         text-align: center;
+    }
+
+    .pagina-login {
+        min-height: auto;
+        padding: 28px 0;
+    }
+
+    .cartao-login {
+        padding: 22px;
     }
 }

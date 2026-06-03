@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Veltrix</title>
+    <title>Cadastrar - Veltrix</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,18 +35,32 @@
         </nav>
     </header>
 
-    <main>
-        <section class="banner banner-paginas" aria-label="Imagens sobre a Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_13_32.png" alt="Loja Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_17_08.png" alt="Atendimento Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_25_47.png" alt="Veículos Veltrix">
-        </section>
+    <main class="pagina-login">
+        <section class="cartao-login cartao-cadastro" aria-labelledby="titulo-cadastro">
+            <img class="logo-login" src="img/Velotrix.svg" alt="Veltrix">
+            <h1 id="titulo-cadastro">Criar conta</h1>
+            <p>Preencha seus dados para se cadastrar na Veltrix.</p>
 
-        <section class="conteudo">
-            <h1>Sobre</h1>
-            <p>Bem-vindo ao nosso site de vendas de carros! Somos uma empresa dedicada a oferecer uma ampla variedade de veículos de alta qualidade para atender às suas necessidades e preferências.</p>
-            <p>Nossa missão é proporcionar uma experiência de compra excepcional, oferecendo carros confiáveis, modernos e acessíveis. Com uma equipe de profissionais experientes, estamos comprometidos em ajudar você a encontrar o carro perfeito para seu estilo de vida e orçamento.</p>
-            <p>O Veltrix é uma plataforma digital desenvolvida para facilitar a compra e venda de veículos de forma prática, rápida e segura. Nosso objetivo é conectar pessoas interessadas em vender seus carros com usuários que procuram veículos de qualidade em um único ambiente online.</p>
+            <form class="form-login" action="Login.html">
+                <label for="nome">Nome completo</label>
+                <input id="nome" type="text" name="nome" placeholder="Seu nome" required>
+
+                <label for="email-cadastro">E-mail</label>
+                <input id="email-cadastro" type="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+
+                <label for="senha-cadastro">Senha</label>
+                <input id="senha-cadastro" type="password" name="senha" placeholder="Crie uma senha" required>
+
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input id="confirmar-senha" type="password" name="confirmar-senha" placeholder="Digite a senha novamente" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <p class="link-conta">Ja tem conta? <a href="Login.html">Entrar</a></p>
         </section>
     </main>
 

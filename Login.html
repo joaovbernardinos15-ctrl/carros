@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Veltrix</title>
+    <title>Login - Veltrix</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,18 +35,23 @@
         </nav>
     </header>
 
-    <main>
-        <section class="banner banner-paginas" aria-label="Imagens sobre a Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_13_32.png" alt="Loja Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_17_08.png" alt="Atendimento Veltrix">
-            <img src="img/ChatGPT Image 1 de jun. de 2026, 18_25_47.png" alt="Veículos Veltrix">
-        </section>
+    <main class="pagina-login">
+        <section class="cartao-login" aria-labelledby="titulo-login">
+            <img class="logo-login" src="img/Velotrix.svg" alt="Veltrix">
+            <h1 id="titulo-login">Entrar na sua conta</h1>
+            <p>Acesse para acompanhar seus carros favoritos e solicitações de compra.</p>
 
-        <section class="conteudo">
-            <h1>Sobre</h1>
-            <p>Bem-vindo ao nosso site de vendas de carros! Somos uma empresa dedicada a oferecer uma ampla variedade de veículos de alta qualidade para atender às suas necessidades e preferências.</p>
-            <p>Nossa missão é proporcionar uma experiência de compra excepcional, oferecendo carros confiáveis, modernos e acessíveis. Com uma equipe de profissionais experientes, estamos comprometidos em ajudar você a encontrar o carro perfeito para seu estilo de vida e orçamento.</p>
-            <p>O Veltrix é uma plataforma digital desenvolvida para facilitar a compra e venda de veículos de forma prática, rápida e segura. Nosso objetivo é conectar pessoas interessadas em vender seus carros com usuários que procuram veículos de qualidade em um único ambiente online.</p>
+            <form class="form-login" action="index.html">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p class="link-conta">Ainda nao tem conta? <a href="Cadastrar.html">Cadastre-se</a></p>
         </section>
     </main>
 
